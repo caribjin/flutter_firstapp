@@ -9,7 +9,7 @@ class FriendlyChatApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Friendly Chat',
-      home: ChatScreen()
+      home: ChatScreen(),
     );
   }
 }
@@ -32,12 +32,12 @@ class _ChatScreenState extends State<ChatScreen> {
               controller: _textController,
               onSubmitted: _handleSubmitted,
               decoration: InputDecoration.collapsed(
-                hintText: 'Send a message'
-              )
+                hintText: 'Send a message',
+              ),
             ),
-          )
+          ),
         ],
-      )
+      ),
     );
   }
 
@@ -48,10 +48,8 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Friendly Chat')
-      ),
-      body: _buildTextComposer()
+      appBar: AppBar(title: Text('Friendly Chat')),
+      body: _buildTextComposer(),
     );
   }
 }
