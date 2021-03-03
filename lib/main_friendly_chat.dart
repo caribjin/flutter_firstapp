@@ -80,7 +80,7 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
       text: text,
       animationController: AnimationController(
         duration: const Duration(milliseconds: 300),
-        // vsync: this,
+        vsync: this,
       ),
     );
 
