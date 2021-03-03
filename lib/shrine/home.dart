@@ -71,6 +71,7 @@ class HomePage extends StatelessWidget {
     }).toList();
   }
 
+
   // TODO: Add a variable for Category (104)
   @override
   Widget build(BuildContext context) {
